@@ -43,7 +43,7 @@ const CountDown = () => {
         minutes: "00",
         seconds: "00",
       });
-      clearInterval();
+      
     } else {
       setCountDownTime({
         days: days.toString(),
@@ -88,7 +88,7 @@ const CountDown = () => {
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
             <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.days == 1 ? "Day" : "Days"}
+              {/* {countDownTime?.days == 1 ? "Day" : "Days"} */}
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
@@ -100,7 +100,7 @@ const CountDown = () => {
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
             <span className="text-[#8486A9] text-xs sm:text-2xl text-center font-medium">
-              {countDownTime?.hours == 1 ? "Hour" : "Hours"}
+              {/* {countDownTime?.hours == 1 ? "Hour" : "Hours"} */}
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
@@ -112,7 +112,7 @@ const CountDown = () => {
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
             <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.minutes == 1 ? "Minute" : "Minutes"}
+              {/* {countDownTime?.minutes == 1 ? "Minute" : "Minutes"} */}
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
@@ -124,7 +124,7 @@ const CountDown = () => {
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
             <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {countDownTime?.seconds == 1 ? "Second" : "Seconds"}
+              {/* {countDownTime?.seconds == 1 ? "Second" : "Seconds"} */}
             </span>
           </div>
         </div>
