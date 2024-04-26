@@ -1,5 +1,5 @@
 'use client'
-
+import style from './Fondo.module.css'
 
 import Link from "next/link"
 import { ImWhatsapp } from "react-icons/im"
@@ -8,7 +8,7 @@ import { ImWhatsapp } from "react-icons/im"
 const Asistencia = () => {
   return (
     <>
-      <div id="asistencia" className="lg:flex w-full pt-12 p-4 bg-[url('../images/fondito.jpg')] lg:justify-center"
+      <div id="asistencia" className={`${style.fondo_total} lg:flex w-full pt-12 p-4 lg:justify-center`}
       
       >
     

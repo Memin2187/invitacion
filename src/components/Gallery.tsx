@@ -5,6 +5,7 @@ import foto1 from '../images/dafne5.jpeg';
 import foto2 from '../images/dafne3.jpeg';
 import foto3 from '../images/dafne4.jpeg';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+import style from './Fondo.module.css'
 
 
 
@@ -39,7 +40,7 @@ const Gallery: React.FC = () => {
  
   return (
     <>
-       <div className="p-8 bg-[url('../images/fondito.jpg')]">
+       <div className={`${style.fondo_total} p-8`}>
        <div className="grid grid-cols-3 gap-4">
       {images.map((image, index) => (
         <div key={index} onClick={() => handleClick(index)}>

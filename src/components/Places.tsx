@@ -1,5 +1,5 @@
 import Image from "next/image";
-
+import style from './Fondo.module.css'
 import salon2 from "../images/salon2.jpeg";
 import templo1 from "../images/templo1.jpeg";
 
@@ -7,7 +7,7 @@ import templo1 from "../images/templo1.jpeg";
 const Places = () => {
   return (
     <>
-      <div className="dancing h-full min-h-screen w-full bg-[url('../images/fondito.jpg')] pt-12 p-4">
+      <div className={`${style.fondo_total} dancing h-full min-h-screen w-full pt-12 p-4`}>
         <div className="grid gap-14 md:grid-cols-3 md:gap-5">
           <div className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400">
             <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">

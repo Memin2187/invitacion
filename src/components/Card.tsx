@@ -1,9 +1,10 @@
 import { GiCrown } from "react-icons/gi";
+import style from './Fondo.module.css'
 
 const Card = () => {
   return (
     <>
-      <section className="py-12 bg-[url('../images/fondito.jpg')] text-gray-100 sm:py-12 lg:py-16">
+      <section className={`${style.fondo_total} py-12 text-gray-100 sm:py-12 lg:py-16`}>
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
             <h2 className="dancing text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">

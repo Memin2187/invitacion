@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useState } from "react";
+import style from './Fondo.module.css'
 
 interface CountDownTime {
   days: string;
@@ -72,7 +73,7 @@ const CountDown = () => {
   }, []);
 
   return (
-    <div className="bg-[url('../images/fondito.jpg')] h-screen">
+    <div className={`${style.fondo_total} h-screen`}>
       <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
         <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
           Act Now, Time is Short

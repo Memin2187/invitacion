@@ -1,7 +1,8 @@
+import style from './Fondo.module.css'
 const TimeLine = () => {
   return (
     <>
-      <div className="bg-[url('../images/fondito.jpg')] p-4">
+      <div className= {`${style.fondo_total} p-4`}>
         <h2 className="text-3xl text-black font-bold mb-12">Eventos</h2>
         <div className="flex flex-col grid-cols-9 p-2 mx-auto md:grid">
           <div className="flex md:contents flex-row-reverse">

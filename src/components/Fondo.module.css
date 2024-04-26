@@ -1,0 +1,3 @@
+.fondo_total{
+    @apply bg-[url('../images/fondo_Pixel.jpg')]
+}
