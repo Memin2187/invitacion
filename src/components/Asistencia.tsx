@@ -8,7 +8,7 @@ import { ImWhatsapp } from "react-icons/im"
 const Asistencia = () => {
   return (
     <>
-      <div className="lg:flex w-ful pt-12 p-4 bg-[url('../images/fondito.jpg')] lg:justify-center"
+      <div id="asistencia" className="lg:flex w-full pt-12 p-4 bg-[url('../images/fondito.jpg')] lg:justify-center"
       
       >
     

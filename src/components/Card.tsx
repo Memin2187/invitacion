@@ -1,45 +1,54 @@
+import { GiCrown } from "react-icons/gi";
+
 const Card = () => {
   return (
     <>
       <section className="py-12 bg-[url('../images/fondito.jpg')] text-gray-100 sm:py-12 lg:py-16">
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-            <h2 className="text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">
-              frase principal
+            <h2 className="dancing text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">
+              Dafne Mis XV AÑOS
             </h2>
           </div>
           <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
             <div className="relative">
-              <div className="absolute -inset-1">
-                <div className="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600"></div>
+
+            
+              
+              <div 
+              className="relative overflow-hidden bg-transparent shadow-2xl border-dashed border-4 border-gray-600 rounded-xl h-full">
+                  <div className="flex items-center justify-center">
+              <GiCrown size={150} color="black" />
               </div>
-              <div className="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
                 <div className="p-9">
-                  <h3 className="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                    papas
+                
+                  <h3 className="dancing text-2xl text-center  text-gray-900 sm:mt-10">
+                    Hoy hace quince años mis padres daban gracias a dios por mí.
+                    Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
+                    paciencia y aconsejarme. Doy gracias también a toda mi
+                    familia por hacer más especial este día. A todos mis amigos
+                    por enseñarme el valor de una verdadera amistad. Deléitate
+                    en el señor y te concederá las peticiones de tu corazón
                   </h3>
-                 
                 </div>
               </div>
             </div>
-            <div className="overflow-hidden bg-white shadow-md rounded-xl">
+            <div className="dancing overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
               <div className="p-9">
-                <h3 className="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                  padrinos
+                <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
+                 Con la bendición de Mis Padres
                 </h3>
-                
+                <p className="text-center text-black text-2xl">Mario Alberto Lemus Gallegos y Nidia</p>
               </div>
             </div>
             <div className="relative">
-              <div className="absolute -inset-1">
-                <div className="w-full h-full rotate-180 opacity-30 blur-lg filter bg-gradient-to-r from-yellow-400 via-pink-500 to-green-600"></div>
-              </div>
-              <div className="relative overflow-hidden bg-white shadow-md rounded-xl h-full">
+             
+              <div className="dancing relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
                 <div className="p-9">
-                  <h3 className="mt-6 text-2xl font-bold text-gray-900 sm:mt-10">
-                 frase 2
+                  <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
+                    Mis Padrinos
                   </h3>
-                 
+                  <p className="text-center text-black text-2xl"> Jessica y Omar Barrendey</p>
                 </div>
               </div>
             </div>

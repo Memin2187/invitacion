@@ -1,10 +1,12 @@
 'use client'
 import React, { useState } from 'react';
 import Image, { StaticImageData } from 'next/image';
-import foto1 from '../images/foto1.png';
-import foto2 from '../images/foto2.png';
-import foto3 from '../images/foto3.png';
+import foto1 from '../images/dafne5.jpeg';
+import foto2 from '../images/dafne3.jpeg';
+import foto3 from '../images/dafne4.jpeg';
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from 'react-icons/ai';
+
+
 
 const Gallery: React.FC = () => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
@@ -17,6 +19,7 @@ const Gallery: React.FC = () => {
 
   const handleClick = (index: number) => {
     setSelectedImageIndex(index);
+    
   };
 
   const handleClose = () => {
@@ -28,10 +31,12 @@ const Gallery: React.FC = () => {
   };
 
   const handlePrev = () => {
-    //setSelectedImageIndex((prevIndex) => (prevIndex === 0 ? images.length - 1 : prevIndex - 1));
-    setSelectedImageIndex((prevIndex) => (prevIndex === (images.length ?? 1) - 1 ? 0 : (prevIndex ?? -1) -1));
+    
+    setSelectedImageIndex((prevIndex) => (prevIndex === (images.length ?? 1) - 1 ? 0 : (prevIndex ?? -1) +1));
+   
+   
   };
-
+ 
   return (
     <>
        <div className="p-8 bg-[url('../images/fondito.jpg')]">
@@ -44,21 +49,21 @@ const Gallery: React.FC = () => {
       {selectedImageIndex !== null && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75">
           <div className="relative">
-            <Image src={images[selectedImageIndex]} alt={`Selected Image ${selectedImageIndex + 1}`} width={400} height={600} />
+            <Image src={images[selectedImageIndex ]} alt={`Selected Image ${selectedImageIndex + 1}`} width={300} height={600} />
             <button
               className="absolute top-1/2 transform -translate-y-1/2 left-0 m-4  p-2 rounded-full"
               onClick={handlePrev}
             >
-              <AiOutlineArrowLeft />
+              <AiOutlineArrowLeft className='bg-white' />
             </button>
             <button
               className="absolute top-1/2 transform -translate-y-1/2 right-0 m-4  p-2 rounded-full"
               onClick={handleNext}
             >
-            <AiOutlineArrowRight />
+            <AiOutlineArrowRight  className='bg-white'/>
             </button>
             <button
-              className="absolute top-0 right-0 m-4  p-2 rounded-full"
+              className="absolute top-0 right-0 m-4  p-2 rounded-full bg-white"
               onClick={handleClose}
             >
               X

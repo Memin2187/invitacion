@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter,Roboto, Playfair_Display } from "next/font/google";
+import { Inter,Roboto, Playfair_Display, Dancing_Script } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 
@@ -13,6 +13,12 @@ const playfair_display = Playfair_Display({
   subsets:['latin'],
   weight: '600',
   variable:'--font-playfair_display',
+})
+
+const dancing = Dancing_Script({
+  subsets:['latin'],
+  weight: '400',
+  variable:'--dancing',
 })
 
 const inter = Inter({ subsets: ["latin"] });
@@ -29,7 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto_init.variable} ${playfair_display.variable}`}>
+      <body className={`${inter.className} ${roboto_init.variable} ${playfair_display.variable} ${dancing.variable}`}>
         <Navigation/>
         {children}
         </body>

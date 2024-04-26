@@ -50,12 +50,13 @@
 -- Start BackGround Animation 
 */
 .area {
-	background: #000000;
+	/* Fondo con opacidad en las orillas */
+	background:  rgba(112, 58, 102, 0.55);
 	width: 100%;
 	height: 100vh;
 	position: relative;
-	z-index: 10;
-	background-image: url('../images//2.jpg');
+	z-index: 1;
+	background-image: url('../images/dafnePrincipal.jpeg');
 	background-repeat: no-repeat;
 	background-position: center;
 	
@@ -172,7 +173,7 @@
 	}
 }
 
-@media only screen and (min-width: 500px) {
+/* @media only screen and (min-width: 500px) {
 	.area {
 		
 		background-image: url('../images//5.avif');
@@ -180,17 +181,18 @@
 		background-position: 50% 30%;
 		
 	}
-}
+}*/
 
 @media only screen and (min-width: 600px) {
 	.area {
 		
-		background-image: url('../images//5.avif');
-		background-repeat: no-repeat;
+		background-image: url('../images/dafnePrincipal.jpeg');
+		/*background-repeat: no-repeat;*/
 		background-position: 50% 30%;
+		background-size: 30%; 
 		
 	}
-}
+} 
 /*
 -- End BackGround Animation 
 */
@@ -204,3 +206,6 @@
 	font-family: var(--font-playfair_display);
 }
 
+.dancing{
+	font-family:var(--dancing) ;
+}

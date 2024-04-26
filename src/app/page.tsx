@@ -4,6 +4,7 @@ import Card from "@/components/Card";
 import CountDown from "@/components/CountDown";
 import Gallery from "@/components/Gallery";
 import Places from "@/components/Places";
+import Regalos from "@/components/Regalos";
 
 import TimeLine from "@/components/TimeLine";
 
@@ -17,6 +18,7 @@ export default function Home() {
    <Places/>
   <TimeLine/>
   <Gallery/>
+  <Regalos/>
    <Asistencia/> 
    </>
   );
