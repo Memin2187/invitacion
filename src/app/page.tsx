@@ -18,7 +18,7 @@ export default function Home() {
    <Card/>
    <CountDown/>
    <Places/>
-  <TimeLine/>
+  {/* <TimeLine/> */}
   <Gallery/>
   <Regalos/>
    <Asistencia/> 
