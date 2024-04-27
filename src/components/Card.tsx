@@ -1,28 +1,25 @@
 import { GiCrown } from "react-icons/gi";
-import style from './Fondo.module.css'
+import style from "./Fondo.module.css";
 
 const Card = () => {
   return (
     <>
-      <section className={`${style.fondo_total} py-12 text-gray-100 sm:py-12 lg:py-16`}>
+      <section
+        className={`${style.fondo_total} py-12 text-gray-100 sm:py-12 lg:py-16`}
+      >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
             <h2 className="dancing text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">
               Dafne Yailin Lemus Limon Mis XV AÑOS
             </h2>
           </div>
-          <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-2 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
+          <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-1 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
             <div className="relative">
-
-            
-              
-              <div 
-              className="relative overflow-hidden bg-transparent shadow-2xl border-dashed border-4 border-gray-600 rounded-xl h-full">
-                  <div className="flex items-center justify-center">
-              <GiCrown size={150} color="black" />
-              </div>
+              <div className="relative overflow-hidden bg-transparent shadow-2xl border-dashed border-4 border-gray-600 rounded-xl h-full">
+                <div className="flex items-center justify-center">
+                  <GiCrown size={150} color="black" />
+                </div>
                 <div className="p-9">
-                
                   <h3 className="dancing text-2xl text-center  text-gray-900 sm:mt-10">
                     Hoy hace quince años mis padres daban gracias a dios por mí.
                     Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
@@ -37,19 +34,23 @@ const Card = () => {
             <div className="dancing overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
               <div className="p-9">
                 <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
-                 Con la bendición de Mis Padres
+                  Con la bendición de Mis Padres
                 </h3>
-                <p className="text-center text-black text-2xl">Mario Alberto Lemus Gallegos y Nidia Limón Durón</p>
+                <p className="text-center text-black text-2xl">
+                  Mario Alberto Lemus Gallegos y Nidia Limón Durón
+                </p>
               </div>
             </div>
             <div className="relative">
-             
               <div className="dancing relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
                 <div className="p-9">
                   <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
                     Mis Padrinos
                   </h3>
-                  <p className="text-center text-black text-2xl"> Jessica y Omar Barrendey</p>
+                  <p className="text-center text-black text-2xl">
+                    {" "}
+                    Jessica y Omar Barrendey
+                  </p>
                 </div>
               </div>
             </div>
