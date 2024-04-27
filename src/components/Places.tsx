@@ -10,7 +10,7 @@ const Places = () => {
       <div className={`${style.fondo_total} dancing h-full min-h-screen w-full pt-12 p-4`}>
         <div className="grid gap-14 md:grid-cols-3 md:gap-5">
           <div className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400">
-            <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">
+            <h1 className="text-darken mb-3 text-2xl font-bold lg:px-14">
               Te espero el día
             </h1>
             <h2 className="text-8xl pb-4">19</h2>
@@ -22,7 +22,7 @@ const Places = () => {
             data-aos-delay="150"
             className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400"
           >
-            <h1 className="text-darken mb-3 text-xl font-medium lg:px-14 ">
+            <h1 className="text-darken mb-3 text-2xl font-bold lg:px-14 ">
               Parroquia María Madre Y Reina de Nuestras Familias
             </h1>
             <p className="pb-2">Hacienda La Congoja 58-B, Haciendas de Aguascalientes, 20196 Aguascalientes, Ags.</p>
@@ -40,7 +40,7 @@ const Places = () => {
             id="salon"
             className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400"
           >
-            <h1 className="text-darken mb-3 pt-3 text-xl font-medium lg:h-14 lg:px-14">
+            <h1 className="text-darken mb-3 pt-3 text-2xl font-bold lg:h-14 lg:px-14">
               Salón Jardín El Mezquite
             </h1>
               <p className="pb-2">Independencia 802, 20358 Puertecito de la Virgen, Ags.</p>
