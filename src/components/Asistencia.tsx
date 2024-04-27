@@ -27,7 +27,7 @@ const Asistencia = () => {
           </button>
 
           <button className="bg-gray-400 text-white rounded-lg p-2 mt-4">
-            <Link href={"https://api.whatsapp.com/send?phone=+44922104553&text=Hola,%20no%20podre%20asistir%20a%20los%20XV%20de%20Dafne"} >No asistiré </Link>
+            <Link href={"https://api.whatsapp.com/send?phone=+4492104553&text=Hola,%20no%20podre%20asistir%20a%20los%20XV%20de%20Dafne"} >No asistiré </Link>
           </button>
       </div>
 
