@@ -22,9 +22,12 @@ const Places = () => {
             data-aos-delay="150"
             className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400"
           >
+            <h1 className="text-center font-bold text-2xl">Misa</h1>
+            <p className="text-2xl text-center">Hora: 4:00 PM</p>
             <h1 className="text-darken mb-3 text-2xl font-bold lg:px-14 ">
               Parroquia María Madre Y Reina de Nuestras Familias
             </h1>
+            <p className="text-center font-bold text-xl">Direccion</p>
             <p className="pb-2">Hacienda La Congoja 58-B, Haciendas de Aguascalientes, 20196 Aguascalientes, Ags.</p>
             <Image src={templo1} alt="templo" width={400} height={100} className="sm:w-full" />
             <iframe
@@ -35,14 +38,19 @@ const Places = () => {
               referrerPolicy="no-referrer-when-downgrade"
               className="lg:w-full sm:w-full"
             ></iframe>
+
+
           </div>
           <div
             id="salon"
             className="rounded-xl bg-transparent p-6 text-center shadow-2xl border border-gray-400"
           >
+            <h1 className="text-center font-bold text-2xl">Recepción</h1>
+            <p className="text-2xl text-center">Hora: 6:00 PM</p>
             <h1 className="text-darken mb-3 pt-3 text-2xl font-bold lg:h-14 lg:px-14">
               Salón Jardín El Mezquite
             </h1>
+            <p className="text-center font-bold text-xl">Direccion</p>
               <p className="pb-2">Independencia 802, 20358 Puertecito de la Virgen, Ags.</p>
             <Image src={salon2} alt="salón" width={400} height={100} className="sm:w-full" />
 
