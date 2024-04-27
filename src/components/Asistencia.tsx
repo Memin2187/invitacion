@@ -23,11 +23,11 @@ const Asistencia = () => {
           <p>por WhatsApp</p>
 
           <button  className="bg-gray-400 text-white rounded-lg p-2 mr-6 mt-4">
-            <Link href={"https://api.whatsapp.com/send?phone=+4492860524&text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20de%20Dafne"} >Sí asistiré </Link>
+            <Link href={"https://api.whatsapp.com/send?phone=+4492104553&text=Hola,%20quiero%20confirmar%20mi%20asistencia%20a%20los%20XV%20de%20Dafne"} >Sí asistiré </Link>
           </button>
 
           <button className="bg-gray-400 text-white rounded-lg p-2 mt-4">
-            <Link href={"https://api.whatsapp.com/send?phone=+4492860524&text=Hola,%20no%20podre%20asistir%20a%20los%20XV%20de%20Dafne"} >No asistiré </Link>
+            <Link href={"https://api.whatsapp.com/send?phone=+44922104553&text=Hola,%20no%20podre%20asistir%20a%20los%20XV%20de%20Dafne"} >No asistiré </Link>
           </button>
       </div>
 
