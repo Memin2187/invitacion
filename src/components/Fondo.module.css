@@ -1,3 +1,4 @@
 .fondo_total{
-    @apply bg-[url('../images/fondo_Pixel.jpg')]
+   /* @apply bg-[url('../images/fondo_Pixel.jpg')]*/
+    @apply bg-pink-300
 }

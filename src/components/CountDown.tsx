@@ -1,82 +1,54 @@
-'use client'
+"use client";
 import { useEffect, useState } from "react";
-import style from './Fondo.module.css'
+import style from "./Fondo.module.css";
 
-interface CountDownTime {
-  days: string;
-  hours: string;
-  minutes: string;
-  seconds: string;
-}
-
-const CountDown = () => {
-  const [countDownTime, setCountDownTime] = useState<CountDownTime>({
-    days: "00",
-    hours: "00",
-    minutes: "00",
-    seconds: "00",
-  });
-
-  const getTimeDifference = (countDownTime: number): void => {
-    const currentTime: number = new Date().getTime();
-    const timeDifference: number = countDownTime - currentTime;
-    let days: string | number =
-      Math.floor(timeDifference / (24 * 60 * 60 * 1000)) >= 10
-        ? Math.floor(timeDifference / (24 * 60 * 60 * 1000))
-        : `0${Math.floor(timeDifference / (24 * 60 * 60 * 1000))}`;
-    const hours: string | number =
-      Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60)) >=
-      10
-        ? Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60))
-        : `0${Math.floor((timeDifference % (24 * 60 * 60 * 1000)) / (1000 * 60 * 60))}`;
-    const minutes: string | number =
-      Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60)) >= 10
-        ? Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60))
-        : `0${Math.floor((timeDifference % (60 * 60 * 1000)) / (1000 * 60))}`;
-    const seconds: string | number =
-      Math.floor((timeDifference % (60 * 1000)) / 1000) >= 10
-        ? Math.floor((timeDifference % (60 * 1000)) / 1000)
-        : `0${Math.floor((timeDifference % (60 * 1000)) / 1000)}`;
-    if (timeDifference < 0) {
-      setCountDownTime({
-        days: "00",
-        hours: "00",
-        minutes: "00",
-        seconds: "00",
-      });
-      
-    } else {
-      setCountDownTime({
-        days: days.toString(),
-        hours: hours.toString(),
-        minutes: minutes.toString(),
-        seconds: seconds.toString(),
-      });
-    }
-  };
+const Countdown: React.FC = () => {
+  const [days, setDays] = useState<number>(0);
+  const [hours, setHours] = useState<number>(0);
+  const [minutes, setMinutes] = useState<number>(0);
+  const [seconds, setSeconds] = useState<number>(0);
 
   useEffect(() => {
-    const customDate: Date = new Date();
-    const countDownDate: Date = new Date(
-      customDate.getFullYear(),
-      customDate.getMonth() + 1,
-      customDate.getDate() + 6,
-      customDate.getHours(),
-      customDate.getMinutes(),
-      customDate.getSeconds() + 1
-    );
-    const intervalId: NodeJS.Timeout = setInterval(() => {
-      getTimeDifference(countDownDate.getTime());
-    }, 1000);
+    // Fecha objetivo: 19 de julio del año actual
+    const targetDate = new Date(new Date().getFullYear(), 6, 19); // Mes es zero-indexed, por eso 6 representa julio
 
+    const updateCountdown = () => {
+      const now = new Date();
+      const difference = targetDate.getTime() - now.getTime();
+
+      if (difference <= 0) {
+        setDays(0);
+        setHours(0);
+        setMinutes(0);
+        setSeconds(0);
+      } else {
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor(
+          (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        const minutes = Math.floor(
+          (difference % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        setDays(days);
+        setHours(hours);
+        setMinutes(minutes);
+        setSeconds(seconds);
+      }
+    };
+
+    const intervalId = setInterval(updateCountdown, 1000);
+
+    // Limpiar el intervalo cuando el componente se desmonte
     return () => clearInterval(intervalId);
   }, []);
 
   return (
-    <div className={`${style.fondo_total} h-screen`}>
+<div className={`${style.fondo_total} dancing h-screen`}>
       <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
-        <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
-          Act Now, Time is Short
+        <span className="text-2xl sm:text-3xl font-semibold text-black text-center tracking-widest px-2">
+          Faltan para mis xv años
         </span>
         <div className="flex justify-center gap-3 sm:gap-8">
           {/* Renderización de los elementos de conteo aquí */}
@@ -84,54 +56,56 @@ const CountDown = () => {
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-                {countDownTime?.days}
+                {days}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {/* {countDownTime?.days == 1 ? "Day" : "Days"} */}
+            <span className="text-[#0a0a0a] text-xs sm:text-2xl text-center capitalize">
+             Días
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-                {countDownTime?.hours}
+                {hours}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#8486A9] text-xs sm:text-2xl text-center font-medium">
-              {/* {countDownTime?.hours == 1 ? "Hour" : "Hours"} */}
+            <span className="text-[#000000] text-xs sm:text-2xl text-center font-medium">
+            Horas
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-                {countDownTime?.minutes}
+                {minutes}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {/* {countDownTime?.minutes == 1 ? "Minute" : "Minutes"} */}
+            <span className="text-[#000000] text-xs sm:text-2xl text-center capitalize">
+              Minutos
             </span>
           </div>
           <div className="flex flex-col gap-5 relative">
             <div className="h-16 w-16 sm:w-32 sm:h-32 lg:w-40 lg:h-40 flex justify-between items-center bg-[#343650] rounded-lg">
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 !-left-[6px] rounded-full bg-[#191A24]"></div>
               <span className="lg:text-7xl sm:text-6xl text-3xl font-semibold text-[#a5b4fc]">
-                {countDownTime?.seconds}
+              {seconds}
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#8486A9] text-xs sm:text-2xl text-center capitalize">
-              {/* {countDownTime?.seconds == 1 ? "Second" : "Seconds"} */}
+            <span className="text-[#000000] text-xs sm:text-2xl text-center capitalize">
+             Segundos
             </span>
+            
           </div>
         </div>
       </div>
     </div>
+
   );
 };
 
-export default CountDown;
+export default Countdown;
