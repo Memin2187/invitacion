@@ -1,7 +1,17 @@
 import { GiCrown } from "react-icons/gi";
 import style from "./Fondo.module.css";
+import TextGenerateEffect from "./TextGenerateEffect";
 
 const Card = () => {
+
+
+  const words = `Hoy hace quince años mis padres daban gracias a dios por mí.
+  Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
+  paciencia y aconsejarme. Doy gracias también a toda mi
+  familia por hacer más especial este día. A todos mis amigos
+  por enseñarme el valor de una verdadera amistad. Deléitate
+  en el señor y te concederá las peticiones de tu corazón`
+
   return (
     <>
       <section
@@ -29,12 +39,8 @@ const Card = () => {
                 </div>
                 <div className="p-9">
                   <h3 className=" text-2xl text-center  text-white sm:mt-2">
-                    Hoy hace quince años mis padres daban gracias a dios por mí.
-                    Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
-                    paciencia y aconsejarme. Doy gracias también a toda mi
-                    familia por hacer más especial este día. A todos mis amigos
-                    por enseñarme el valor de una verdadera amistad. Deléitate
-                    en el señor y te concederá las peticiones de tu corazón
+                  <TextGenerateEffect words={words}/>
+                    
                   </h3>
                 </div>
               </div>
