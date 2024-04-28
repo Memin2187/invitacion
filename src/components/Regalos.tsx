@@ -5,7 +5,7 @@ import style from './Fondo.module.css'
 const Regalos = () => {
   return (
     <>
-      <div className={`${style.fondo_total} dancing lg:flex w-full lg:justify-center p-4`}>
+      <div className={`${style.fondo_total} playfair_display lg:flex w-full lg:justify-center p-4`}>
         <div className="py-4 rounded-xl lg:w-1/4 bg-transparent text-center shadow-2xl border border-gray-400">
             <div className="border-double border-4 border-gray-600">
             <div className="flex items-center justify-center">

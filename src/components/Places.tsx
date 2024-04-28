@@ -7,7 +7,7 @@ import templo1 from "../images/templo1.jpeg";
 const Places = () => {
   return (
     <>
-      <div className={`${style.fondo_total} dancing min-h-screen w-full pt-12 p-4`}>
+      <div className={`${style.fondo_total} playfair_display min-h-screen w-full pt-12 p-4`}>
         <div className="grid gap-14 md:grid-cols-2 md:gap-5">
          
           <div

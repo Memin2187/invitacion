@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter,Roboto, Playfair_Display, Dancing_Script } from "next/font/google";
+import { Inter,Sedan, Playfair_Display, Dancing_Script, Pacifico, Caveat } from "next/font/google";
 import "./globals.css";
 import Navigation from "../components/Navigation";
 
-const roboto_init = Roboto({
+const roboto_init = Sedan({
   subsets:['latin'],
-  weight:['100'],
-  variable:'--font-roboto',
+  weight:['400'],
+  variable:'--font-sedan',
 })
 
 const playfair_display = Playfair_Display({
@@ -19,6 +19,16 @@ const dancing = Dancing_Script({
   subsets:['latin'],
   weight: '400',
   variable:'--dancing',
+})
+const pacifico = Pacifico({
+  subsets:['latin'],
+  weight: '400',
+  variable:'--pacifico',
+})
+const caveat = Caveat({
+  subsets:['latin'],
+  weight: '400',
+  variable:'--caveat',
 })
 
 const inter = Inter({ subsets: ["latin"] });
@@ -35,7 +45,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${inter.className} ${roboto_init.variable} ${playfair_display.variable} ${dancing.variable}`}>
+      <body className={`${inter.className} ${roboto_init.variable} ${playfair_display.variable} ${dancing.variable} ${pacifico.variable} ${caveat.variable}`}>
         <Navigation/>
         {children}
         </body>

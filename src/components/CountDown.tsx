@@ -45,7 +45,7 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-<div className={`${style.fondo_total} dancing pb-8 pt-8`}>
+<div className={`${style.fondo_total} playfair_display pb-8 pt-8`}>
       <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
         <span className="text-2xl sm:text-3xl font-semibold text-black text-center tracking-widest px-2">
           Faltan

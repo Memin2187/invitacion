@@ -5,18 +5,18 @@ const Card = () => {
   return (
     <>
       <section
-        className={`${style.fondo_total} py-12 text-gray-100 sm:py-12 lg:py-16`}
+        className={`${style.fondo_total} playfair_display  py-12 text-gray-100 sm:py-12 lg:py-16`}
       >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-            <h2 className="dancing text-6xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-6xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
               Mis XV
             </h2>
-            <h2 className="dancing text-8xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-8xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
             Dafne
               
             </h2>
-            <h2 className="dancing text-4xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-4xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
               
               Yailin Lemus Limon
             </h2>
@@ -28,7 +28,7 @@ const Card = () => {
                   <GiCrown size={150} color="black" />
                 </div>
                 <div className="p-9">
-                  <h3 className="dancing text-2xl text-center  text-gray-900 sm:mt-2">
+                  <h3 className=" text-2xl text-center  text-gray-900 sm:mt-2">
                     Hoy hace quince años mis padres daban gracias a dios por mí.
                     Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
                     paciencia y aconsejarme. Doy gracias también a toda mi
@@ -39,7 +39,7 @@ const Card = () => {
                 </div>
               </div>
             </div>
-            <div className="dancing overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
+            <div className="overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
               <div className="p-6">
                 <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-6">
                   Con la bendición de Mis Padres
@@ -56,7 +56,7 @@ const Card = () => {
               </div>
             </div>
             <div className="relative">
-              <div className="dancing relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
+              <div className="relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
                 <div className="p-9">
                   <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-10">
                     Mis Padrinos

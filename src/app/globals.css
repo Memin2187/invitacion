@@ -197,8 +197,8 @@
 -- End BackGround Animation 
 */
 
-.roboto{
-	font-family: var(--font-roboto);
+.sedan{
+	font-family: var(--font-sedan);
 }
 
 
@@ -208,4 +208,13 @@
 
 .dancing{
 	font-family:var(--dancing) ;
+}
+
+.pacifico
+{
+	font-family: var(--pacifico);
+}
+
+.caveat{
+	font-family: var(--caveat);
 }
