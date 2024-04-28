@@ -35,8 +35,8 @@ const Card = () => {
               </div>
             </div>
             <div className="dancing overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
-              <div className="p-9">
-                <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-6">
+              <div className="p-6">
+                <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-6">
                   Con la bendición de Mis Padres
                 </h3>
                 <p className="text-center text-black text-2xl mt-6">
@@ -53,7 +53,7 @@ const Card = () => {
             <div className="relative">
               <div className="dancing relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
                 <div className="p-9">
-                  <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
+                  <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-10">
                     Mis Padrinos
                   </h3>
                   <p className="text-center text-black text-2xl mt-6">

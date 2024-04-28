@@ -18,7 +18,7 @@ const Regalos = () => {
            
           </p>
           <div className="flex items-center justify-center">
-
+    
           <BsFillEnvelopeOpenHeartFill size={100} color="#9B07CF" />
           </div>
           <p className="text-xl p-4"> La lluvia de sobres es regalar dinero en efectivo a la quinceañera
