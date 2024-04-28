@@ -2,6 +2,7 @@ import Asistencia from "@/components/Asistencia";
 import Banner from "@/components/Banner";
 import Card from "@/components/Card";
 import CountDown from "@/components/CountDown";
+import Dia from "@/components/Dia";
 import Gallery from "@/components/Gallery";
 import Places from "@/components/Places";
 import Regalos from "@/components/Regalos";
@@ -16,7 +17,9 @@ export default function Home() {
    <Banner/>
    <Rola/>
    <Card/>
+   <Dia/>
    <CountDown/>
+
    <Places/>
   {/* <TimeLine/> */}
   <Gallery/>

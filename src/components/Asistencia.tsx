@@ -14,7 +14,9 @@ const Asistencia = () => {
     
       <div className="rounded-xl bg-white p-6 text-center shadow-2xl lg:w-1/4">
        
+        <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Por favor</h1>
         <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Confirmar Asistencia</h1>
+        <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Antes del 1 de Julio</h1>
         <div className="flex items-center justify-center mb-2">
           
           <ImWhatsapp  size={50}/>

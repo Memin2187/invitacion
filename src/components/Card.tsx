@@ -9,8 +9,11 @@ const Card = () => {
       >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-            <h2 className="dancing text-3xl font-bold leading-tight text-black sm:text-4xl xl:text-5xl mb-6">
-              Dafne Yailin Lemus Limon Mis XV AÑOS
+            <h2 className="dancing text-6xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+              Mis XV
+            </h2>
+            <h2 className="dancing text-4xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+              Dafne Yailin Lemus Limon
             </h2>
           </div>
           <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-1 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
@@ -33,11 +36,17 @@ const Card = () => {
             </div>
             <div className="dancing overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
               <div className="p-9">
-                <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
+                <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-6">
                   Con la bendición de Mis Padres
                 </h3>
+                <p className="text-center text-black text-2xl mt-6">
+                  Mario Alberto Lemus Gallegos
+                </p>
                 <p className="text-center text-black text-2xl">
-                  Mario Alberto Lemus Gallegos y Nidia Limón Durón
+                  y 
+                </p>
+                <p className="text-center text-black text-2xl">
+                  Nidia Limón Durón
                 </p>
               </div>
             </div>
@@ -47,7 +56,7 @@ const Card = () => {
                   <h3 className="mt-6 text-center text-4xl  text-gray-900 sm:mt-10">
                     Mis Padrinos
                   </h3>
-                  <p className="text-center text-black text-2xl">
+                  <p className="text-center text-black text-2xl mt-6">
                     {" "}
                     Jessica y Omar Barrendey
                   </p>

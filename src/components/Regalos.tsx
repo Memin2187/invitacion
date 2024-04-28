@@ -9,7 +9,7 @@ const Regalos = () => {
         <div className="py-4 rounded-xl lg:w-1/4 bg-transparent text-center shadow-2xl border border-gray-400">
             <div className="border-double border-4 border-gray-600">
             <div className="flex items-center justify-center">
-        <FaGift size={100}/>
+        <FaGift size={100} color="#9B07CF"/>
 
         </div>
           <p className="text-center mb-3 text-xl font-medium p-4">
@@ -19,7 +19,7 @@ const Regalos = () => {
           </p>
           <div className="flex items-center justify-center">
 
-          <BsFillEnvelopeOpenHeartFill size={100} />
+          <BsFillEnvelopeOpenHeartFill size={100} color="#9B07CF" />
           </div>
           <p className="text-xl p-4"> La lluvia de sobres es regalar dinero en efectivo a la quinceañera
             Habrá un buzón en el salón para depositar tu sobre.</p>
