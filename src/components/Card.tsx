@@ -12,18 +12,23 @@ const Card = () => {
             <h2 className="dancing text-6xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
               Mis XV
             </h2>
+            <h2 className="dancing text-8xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            Dafne
+              
+            </h2>
             <h2 className="dancing text-4xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
-              Dafne Yailin Lemus Limon
+              
+              Yailin Lemus Limon
             </h2>
           </div>
           <div className="grid max-w-4xl lg:max-w-6xl grid-cols-1 mx-auto mt-8 text-center gap-y-4 sm:gap-x-8 sm:grid-cols-1 lg:grid-cols-3 sm:mt-12 lg:mt-20 sm:text-left">
             <div className="relative">
-              <div className="relative overflow-hidden bg-transparent shadow-2xl border-dashed border-4 border-gray-600 rounded-xl h-full">
+              <div className="relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full">
                 <div className="flex items-center justify-center">
                   <GiCrown size={150} color="black" />
                 </div>
                 <div className="p-9">
-                  <h3 className="dancing text-2xl text-center  text-gray-900 sm:mt-10">
+                  <h3 className="dancing text-2xl text-center  text-gray-900 sm:mt-2">
                     Hoy hace quince años mis padres daban gracias a dios por mí.
                     Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
                     paciencia y aconsejarme. Doy gracias también a toda mi
