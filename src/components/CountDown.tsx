@@ -45,9 +45,9 @@ const Countdown: React.FC = () => {
   }, []);
 
   return (
-<div className={`${style.fondo_total} playfair_display pb-8 pt-8`}>
+<div className={`${style.fondo_total} playfair_display pb-8 pt-8 text-white`}>
       <div className="flex flex-col items-center justify-center w-full h-full gap-8 sm:gap-16">
-        <span className="text-2xl sm:text-3xl font-semibold text-black text-center tracking-widest px-2">
+        <span className="text-2xl sm:text-3xl font-semibold text-white text-center tracking-widest px-2">
           Faltan
         </span>
         <div className="flex justify-center gap-3 sm:gap-8">
@@ -60,7 +60,7 @@ const Countdown: React.FC = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#0a0a0a] text-2xl sm:text-xl text-center capitalize">
+            <span className="text-[#ffffff] text-2xl sm:text-xl text-center capitalize">
              Días
             </span>
           </div>
@@ -72,7 +72,7 @@ const Countdown: React.FC = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#000000] text-2xl sm:text-xl text-center font-medium">
+            <span className="text-[#ffffff] text-2xl sm:text-xl text-center font-medium">
             Horas
             </span>
           </div>
@@ -84,7 +84,7 @@ const Countdown: React.FC = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#000000] text-2xl sm:text-xl text-center capitalize">
+            <span className="text-[#ffffff] text-2xl sm:text-xl text-center capitalize">
               Minutos
             </span>
           </div>
@@ -96,7 +96,7 @@ const Countdown: React.FC = () => {
               </span>
               <div className="relative h-2.5 w-2.5 sm:h-3 sm:w-3 -right-[6px] rounded-full bg-[#191A24]"></div>
             </div>
-            <span className="text-[#000000] text-xl sm:text-2xl text-center capitalize">
+            <span className="text-[#ffffff] text-xl sm:text-2xl text-center capitalize">
              Segundos
             </span>
             

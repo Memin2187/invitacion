@@ -8,7 +8,7 @@ import Places from "@/components/Places";
 import Regalos from "@/components/Regalos";
 import Rola from "@/components/Rola";
 
-import TimeLine from "@/components/TimeLine";
+
 
 
 export default function Home() {
@@ -19,9 +19,9 @@ export default function Home() {
    <Card/>
    <Dia/>
    <CountDown/>
-
+    
    <Places/>
-  {/* <TimeLine/> */}
+  
   <Gallery/>
   <Regalos/>
    <Asistencia/> 

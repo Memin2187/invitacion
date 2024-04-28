@@ -5,18 +5,18 @@ const Card = () => {
   return (
     <>
       <section
-        className={`${style.fondo_total} playfair_display  py-12 text-gray-100 sm:py-12 lg:py-16`}
+        className={`${style.fondo_total} playfair_display  py-12 text-white sm:py-12 lg:py-16`}
       >
         <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <div className="max-w-xl mx-auto text-center xl:max-w-2xl">
-            <h2 className="text-6xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-6xl font-bold leading-tight text-center text-white sm:text-4xl xl:text-5xl mb-6">
               Mis XV
             </h2>
-            <h2 className="text-8xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-8xl font-bold leading-tight text-center text-white sm:text-4xl xl:text-5xl mb-6">
             Dafne
               
             </h2>
-            <h2 className="text-4xl font-bold leading-tight text-center text-black sm:text-4xl xl:text-5xl mb-6">
+            <h2 className="text-4xl font-bold leading-tight text-center text-white sm:text-4xl xl:text-5xl mb-6">
               
               Yailin Lemus Limon
             </h2>
@@ -25,10 +25,10 @@ const Card = () => {
             <div className="relative">
               <div className="relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full">
                 <div className="flex items-center justify-center">
-                  <GiCrown size={150} color="black" />
+                  <GiCrown size={150} color="white" />
                 </div>
                 <div className="p-9">
-                  <h3 className=" text-2xl text-center  text-gray-900 sm:mt-2">
+                  <h3 className=" text-2xl text-center  text-white sm:mt-2">
                     Hoy hace quince años mis padres daban gracias a dios por mí.
                     Hoy yo doy gracias a dios por ellos, por cuidarme tenerme
                     paciencia y aconsejarme. Doy gracias también a toda mi
@@ -41,16 +41,16 @@ const Card = () => {
             </div>
             <div className="overflow-hidden bg-transparent shadow-2xl rounded-xl border-double border-4 border-violet-950">
               <div className="p-6">
-                <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-6">
+                <h3 className="mt-2 text-center text-4xl  text-white sm:mt-6">
                   Con la bendición de Mis Padres
                 </h3>
-                <p className="text-center text-black text-2xl mt-6">
+                <p className="text-center text-white text-2xl mt-6">
                   Mario Alberto Lemus Gallegos
                 </p>
-                <p className="text-center text-black text-2xl">
+                <p className="text-center text-white text-2xl">
                   y 
                 </p>
-                <p className="text-center text-black text-2xl">
+                <p className="text-center text-white text-2xl">
                   Nidia Limón Durón
                 </p>
               </div>
@@ -58,10 +58,10 @@ const Card = () => {
             <div className="relative">
               <div className="relative overflow-hidden bg-transparent shadow-2xl rounded-xl h-full border-double border-4 border-violet-950">
                 <div className="p-9">
-                  <h3 className="mt-2 text-center text-4xl  text-gray-900 sm:mt-10">
+                  <h3 className="mt-2 text-center text-4xl  text-white sm:mt-10">
                     Mis Padrinos
                   </h3>
-                  <p className="text-center text-black text-2xl mt-6">
+                  <p className="text-center text-white text-2xl mt-6">
                     {" "}
                     Jessica y Omar Barrendey
                   </p>
