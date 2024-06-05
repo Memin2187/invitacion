@@ -16,7 +16,7 @@ const Asistencia = () => {
        
         <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Por favor</h1>
         <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Confirmar Asistencia</h1>
-        <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Antes del 1 de Junio</h1>
+        {/* <h1 className="text-darken mb-3 text-xl font-medium lg:px-14">Antes del 1 de Junio</h1> */}
         <div className="flex items-center justify-center mb-2">
           
           <ImWhatsapp  size={50}/>
